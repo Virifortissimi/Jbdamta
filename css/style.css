@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Jura', sans-serif;
+    width: 98%;
+    margin: 0 auto;
 }
 h1 {
     font-family: 'Comfortaa', cursive;
@@ -9,34 +11,46 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;
 }
-
+p {
+    text-align: justify;
+}
+.error {
+    color: red;
+}
+.success {
+    color: #ff9966;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
 .top-nav {
-    background: transparent !important;
-    padding: 15px 60px;
+    background: #589be25c !important;
+    padding: 5px 3px;
     transition: 0.5s;
 }
 .top-nav.scrolled {
     background: #9EA6DD !important;
+    width: 100% !important;
     opacity: 0.9;
-    padding: 15px 60px;
+    padding: 5px 3px;
     transition: 0.5s;
     /* box-shadow: 0 1px 5px black; */
 }
 .aboutus-nav, .below-aboutus-nav {
     background: #9EA6DD !important;
     opacity: 0.9;
-    padding: 15px 60px;
+    padding: 3px 3px;
 }
 
 .below-top-nav {
-    margin-top: 54px;
-    padding: 15px 60px;
-    box-shadow: 0px 4px 3px #f99f8b;
+    margin-top: 28px;
+    padding: 3px 3px;
+    /* box-shadow: 0px 4px 3px #f99f8b; */
     /* z-index: 0; */
 }
 .below-aboutus-nav {
-    margin-top: 54px;
-    padding: 15px 60px;
+    margin-top: 24px;
+    padding: 3px 3px;
     box-shadow: 0px 4px 3px #f99f8b;
 }
 .below-aboutus-nav a img {
@@ -64,24 +78,27 @@ li.nav-item.dropdown {
     text-shadow: 0 1px 4px #9EA6DD;
 }
 .top-nav a img {
-    width: 70px;
-    height: 67px;
+    width: 100px;
+    height: 98px;
 }
-.nav-float-left {
+.floatleft {
     margin-left: auto;
+    /* float: left; */
 }
 .nav-float-left li a {
     color: #EA6524 !important;
-    font-size: 20px;
+    font-size: 15px;
     text-shadow: 0 1px 6px #9EA6DD;
     font-weight: 500;
     text-shadow: 0 1px 1px #5d3b0b;
     transition: 0.5s;
+    text-transform: uppercase;
 }
 .top-top-nav a, .aboutus-nav a {
     color: white;
     font-weight: 700;
     text-shadow: 0 1px 3px #5d3b0b;
+    font-size: 12px;
 }
 .dropdown-menu.show {
     display: block;
@@ -91,9 +108,11 @@ li.nav-item.dropdown {
 }
 .carousel-caption h1 {
     text-shadow: 0 1px 3px #5d3b0b;
+    text-transform: uppercase;
+    font-size: 28px;
 }
 a.nav-link:hover {
-    font-size: 23px !important;
+    font-size: 16px !important;
     margin-top: -2px;
     border-bottom: 2px solid #EA6524;
     transition: 0.5s;
@@ -113,13 +132,17 @@ a.nav-link:hover {
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 294px;
+    bottom: 283px;
     left: 15%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
+}
+.carousel-contain {
+    width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -133,8 +156,10 @@ a.nav-link:hover {
 }
 .objective-about-us h2 {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 32px;
     padding-bottom: 15px;
+    color: #ff532d;
+    text-shadow: 0 1px 1px;
 }
 .objective-about-us p a, .video-section p a {
     border: 1px solid #9EA6DD;
@@ -274,7 +299,7 @@ footer {
 
 
 .main-aboutus {
-    margin-top: 250px;
+    margin-top: 200px;
 }
 .main-aboutus img {
     -webkit-transform: rotateZ(0deg);
@@ -337,7 +362,7 @@ section h5 {
 
 
 .main-services {
-    margin-top: 240px;
+    margin-top: 200px;
 }
 main.service-main {
     line-height: 30px;
@@ -363,6 +388,9 @@ main.service-main h5 {
     font-size: 28px;
     color: #ff6543;
     text-shadow: 0 1px 1px;
+}
+.slider .slide img {
+    width: 90px;
 }
 
 
@@ -420,7 +448,7 @@ main.service-main h5 {
   }
   /* //popup */
   .projects-main {
-    margin-top: 170px;
+    margin-top: 200px;
 }  
 
 
@@ -430,7 +458,7 @@ main.service-main h5 {
 
 
 main.contact-main {
-    margin-top: 225px;
+    margin-top: 200px;
 }
 main.contact-main h2 {
     font-size: 25px;
@@ -447,19 +475,15 @@ main.contact-main .cards {
 main.contact-main h5, main.contact-main h4 {
     font-size: 13px;
 }
-input, textarea {
-    border: 1px solid #f1bfb4 !important;
-    margin-bottom: 20px;
-    border-radius: 0px !important;
+fieldset {
+    width: 100%;
 }
-.form-input {
-    margin: 14px;
+fieldset input, fieldset textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 17px;
 }
-/* .form-bg {
-    background-image: url(../img/storage-tank-profiling.jpg);
-
-} */
-.form-bg a {
+button {
     width: 100%;
     background: #a8afe0;
     text-align: center;
@@ -467,8 +491,9 @@ input, textarea {
     padding: 8px;
     transition: 0.4s;
     color: white;
+    border: none;
 }
-.form-bg a:hover {
+button:hover {
     font-size: 20px;
     background: #ff6442;
     text-decoration: none;
@@ -483,14 +508,131 @@ input, textarea {
 
 
 @media (max-width: 769px) {
-    button.navbar-toggler.collapsed {
-        background: #ff522c !important;
-        border: #ff532d !important;
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border-color: rgba(0,0,0,.1);
+        width: 54px;
     }
     .front-page-card img {
         margin-top: 130px;
     }
     .front-page-card2 img {
         margin-top: 80px;
+    }
+    .below-top-nav {
+        padding: 3px 30px;
+    }
+    .top-nav {
+        padding: 5px 33px;
+    }
+    .top-nav.scrolled {
+        padding: 5px 20px;
+        width: 100% !important;
+    }
+    .carousel-caption {
+        bottom: 170px;
+    }
+    .below-aboutus-nav {
+        margin-top: 23px;
+        padding: 3px 25px;
+    }
+    .aboutus-nav, .below-aboutus-nav {
+        padding: 3px 27px;
+    }
+    main.index_main {
+        margin-top: 45px;
+    }
+    .carousel-contain {
+        width: 100%;
+        margin: 0 auto;
+    }
+     .hero-image .carousel-inner {
+        width: 100%;
+        height: 55vh;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 55vh;
+    }  
+    .front-page-card2 img {
+        height: 260px;
+    }
+    .front-page-card img {
+        height: 290px;
+    }
+}
+@media (max-width: 600px) {
+    footer {
+        line-height: 1.5rem;
+    }
+    .carousel-caption {
+        bottom: 185px;
+    }
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+    .front-page-card img {
+        height: 370px;
+        margin-top: 20px;
+    }
+    .front-page-card2 img {
+        height: 500px;
+        margin-top: 0px;
+    }
+}
+@media (max-width: 412px) {
+    .hero-image .carousel-inner {
+        height: 50vh;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media (max-width: 420px) {
+    .below-top-nav {
+        margin-top: 46px;
+    }
+    .below-aboutus-nav {
+        margin-top: 42px;
+        padding: 3px 25px;
+    }
+    .carousel-caption {
+        bottom: 130px;
+    }
+    .carousel-caption h1 {
+        font-size: 18px;
+    }
+    .front-page-card img {
+        height: 350px;
+        margin-top: 20px;
+    }
+    .front-page-card2 img {
+        height: 430px;
+        margin-top: 0px;
+    }
+}
+@media (max-width:375px) {
+    .front-page-card img {
+        height: 330px;
+        margin-top: 20px;
+    }
+    .front-page-card2 img {
+        height: 400px;
+        margin-top: 0px;
+    }
+}
+@media (max-width: 360px) {
+    .below-top-nav {
+        margin-top: 46px;
+    }
+    .below-aboutus-nav {
+        margin-top: 41px;
+        padding: 3px 25px;
+    }
+}
+@media (max-width: 360px) {
+    .carousel-caption {
+        bottom: 35px;
     }
 }
