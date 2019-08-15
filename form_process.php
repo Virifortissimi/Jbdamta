@@ -2,7 +2,6 @@
 // define variables and set them to empty values
 $name_error  = $phone_error = $email_error = "";
 $name = $phone = $email = $message = $success = "";
-
 //form is submitted with POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
@@ -14,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $name_error ="Only Letters and white space allowed";
         }
     }
-
     if (empty($_POST["email"])) {
         $email_error = "Email is required";
     } else {
@@ -24,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $email_error ="Invalid email format";
         }
     }
-
     if (empty($_POST["phone"])) {
         $phone_error = "Phone is required";
     } else {
@@ -34,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $phone_error ="Ivalid Phone Number";
         }
     }
-
     // if (empty($_POST["url"])) {
     //     $url_error = "";
     // } else {
@@ -44,23 +40,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //         $url_error ="Invalid Url";
     //     }
     // }
-
     if (empty($_POST["message"])) {
         $message = "";
     } else {
         $message = test_input($_POST["message"]);
     }
-
     if ($name_error == "" and $email_error == "" and $phone_error == "") {
         $message_body = "";
         unset($_POST['submit']);
         foreach ($_POST as $key => $value) {
             $message_body .= "$key: $value\n";
         }
-
         $to = 'jbdamta@gmail.com';
         $subject = 'Contact Form Submitted';
-
         if (mail($to, $subject, $message)) {
             $success = "Your Message Has Been Submitted";
             echo $success;
@@ -68,12 +60,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
-
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
-
     return $data;
 }
 ?>

@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="JB DAM TA Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-      Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <meta name="keywords" content="JB DAMTA is a friendly, privately run company based in Nigeria, offering
+    specialized on-site fuel tank cleaning services to clients in a wide range of
+    industries. Using modern technology, our highly-experienced team provides a
+    thorough, intensive fuel tank cleaning service. We work with you to provide
+    solutions for increased uptimes by cleaning your most hard-to-clean tanks,
+    promising high quality, competitive pricing, prompt delivery, with an
+    outstanding attention to details." />
+
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
   
   
-    <title>Document</title>
+    <title>JB DAMTA - ABOUT US</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootscrap.css">
     <link rel="stylesheet" href="./css/style.css">
-  <link href="css/logo-slider.css" rel='stylesheet'>
+    <link href="css/logo-slider.css" rel='stylesheet'>
+    <link rel="stylesheet" href="./font/css/font-awesome.min.css">
   
 </head>
 
@@ -22,21 +30,30 @@
  
 
   <nav class="navbar fixed-top aboutus-nav navbar-light bg-light">
-    <a href="tel:+2348183779494">+(234) 818 377 9494</a>
+      <a href="tel:+2348183779494" class="phone-hide">+(234) 818 377 9494</a>
 
-    <a href="tel:+2348066101215">+(234) 806 610 1215</a>
+      <a href="tel:+2348183779494" class="phone-hide2"> <i class="fa fa-phone"></i>+(234) 818 377 9494</a>
 
-    <a href="https://twitter.com/JbDamta">Follow us on LinkedIn</a>
+      <a href="tel:+2348066101215" class="phone-hide">+(234) 806 610 1215</a>
 
-    <a href="https://twitter.com/JbDamta">Follow us on Twitter</a>
+      <a href="https://www.linkedin.com/in/jb-dam-ta-limited-673b49139" class="linkedin-hide">Follow us on LinkedIn</a>
+
+      <a href="https://twitter.com/JbDamta" class="twitter-hide">Follow us on Twitter</a>
   </nav>
 
+
+  <div class="row">
   <nav class="navbar navbar-expand-lg below-aboutus-nav navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="./index.html">
           <img src="./img/CompanyLogo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+      </button>
+
+       <!-- Button trigger modal -->
+       <button type="button" class="btn btn-primary button-hide" data-toggle="modal" data-target="#exampleModalCenter">
+        <i class="fa fa-plus"></i>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,6 +78,30 @@
           </div>
       </div>
     </nav>
+  </div>
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Follow Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <i class="fa fa-twitter"></i> <a href="https://twitter.com/JbDamta">Follow us on Twitter</a>
+
+            <hr />
+
+            <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/jb-dam-ta-limited-673b49139">Follow us on LinkedIn</a>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -68,14 +109,20 @@
 
 <main>
   <div class="row main-aboutus">
+      <div class="row phone-about-us">
+        <div class="container">
+          <h2>About Us</h2>
+        </div>
+      </div>
+
       <div class="container">
-        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="col-lg-4 col-md-7 col-sm-12">
           <div class="cards">
               <img src="./img/main-head.jpg" alt="news image" class="img-fluid">
           </div>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-12">
-          <h2>ABOUT US</h2>
+        <div class="col-lg-8 col-md-5 col-sm-12">
+          <h2 class="hide-about-us">ABOUT US</h2>
           <p> JB DAMTA is a friendly, privately run company based in Nigeria, offering
                 specialized on-site fuel tank cleaning services to clients in a wide range of
                 industries. Using modern technology, our highly-experienced team provides a
@@ -91,7 +138,7 @@
 
     <div class="row">
       <div class="container">
-          <p> JB DAMTA solutions are customized to taking your preventive maintenance
+          <p class="second-paragragh"> JB DAMTA solutions are customized to taking your preventive maintenance
               schedules to the next level. Our objective is to help you protect your fuel storage
               tanks, your fuel, and your expensive engines by disallowing entry of harmful
               contaminants.
@@ -107,7 +154,7 @@
 
     <div class="row aboutus-last-para">
       <div class="container">
-        <p>
+        <p class="third-paragragh">
           JB DAMTA: your One Stop Partner for Flow Meter, Tank Calibration, Tank Cleaning, Petroleum Equipment, Storage Tank Maintenance, Fuel Filtration, Piping Installation, Tank Gauging System & Level Monitoring, Fuel Analysis, Facility Inspection and Diesel Testing Kit. 
         </p>
       </div>
@@ -136,7 +183,8 @@
               <div class="slide"><img src="./img/huawei.png"></div>
               <div class="slide"><img src="./img/avalon.png"></div>
               <div class="slide"><img src="./img/Jan-De-nul.gif"></div>
-              <div class="slide"><img src="./img/huawei.png"></div>
+              <div class="slide"><img src="./img/tulip.jpeg"></div>
+              <div class="slide"><img src="./img/thepalms.jpeg"></div>
             </section>
 
 
@@ -168,9 +216,9 @@
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="./js/carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="./js/carousel.js"></script>
 
 </body>
 
